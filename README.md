@@ -197,12 +197,6 @@ The backend API will run on `http://localhost:5000`
 - `POST /api/contact` - Send contact message
 - `GET /api/contact` - Get all messages (Admin)
 
-## 🔐 Default Admin Account
-- Email: admin@tours.com
-- Password: admin123
-
-**Note:** Change these credentials in production!
-
 ## 🎨 Features Highlights
 
 ### Responsive Video Homepage
