@@ -1,0 +1,216 @@
+/* Gallery Detail Pages CSS */
+
+.detail-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/migration.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+.detail-header .header-content {
+    max-width: 800px;
+}
+
+.detail-header h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.detail-header p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.locations-section {
+    padding: 4rem 9%;
+    background: #f7f7f7;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.location-card {
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+}
+
+.location-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.location-info {
+    padding: 2rem;
+}
+
+.location-info h3 {
+    font-size: 2rem;
+    color: var(--ranger);
+    margin-bottom: 1rem;
+}
+
+.location-info .description {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.location-info .timing {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #444;
+}
+
+.location-info .timing i {
+    color: var(--ranger);
+    font-size: 1.6rem;
+}
+
+.location-info .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--ranger);
+    color: #fff;
+    padding: .8rem 2rem;
+    border: .2rem solid var(--ranger);
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.location-info .btn:hover {
+    background: rgba(255, 165, 0, 0.2);
+    color: var(--ranger);
+}
+
+.tips-section {
+    padding: 4rem 9%;
+    background: #fff;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tip-box {
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tip-box:hover {
+    background: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.tip-box i {
+    font-size: 4rem;
+    color: var(--ranger);
+    margin-bottom: 1rem;
+}
+
+.tip-box h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tip-box p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .detail-header h1 {
+        font-size: 3rem;
+    }
+    
+    .detail-header p {
+        font-size: 1.6rem;
+    }
+    
+    .locations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-header {
+        min-height: 40vh;
+        margin-top: 8rem;
+    }
+    
+    .detail-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .detail-header p {
+        font-size: 1.4rem;
+    }
+    
+    .locations-section,
+    .tips-section {
+        padding: 2rem;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .detail-header h1 {
+        font-size: 2rem;
+    }
+    
+    .detail-header p {
+        font-size: 1.2rem;
+    }
+    
+    .location-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .location-info .description {
+        font-size: 1.3rem;
+    }
+    
+    .location-info .timing {
+        font-size: 1.2rem;
+    }
+}
